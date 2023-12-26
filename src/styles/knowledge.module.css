@@ -1,0 +1,29 @@
+.headings{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.heading{
+    font-size: 3rem;
+    width: 20ch ;
+    font-weight: 500;
+}
+.readBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    justify-items: center;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    width: 5%;
+    cursor: pointer;
+}
+.disabled{
+    opacity: 0.5;
+}

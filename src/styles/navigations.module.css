@@ -1,0 +1,24 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+.navigation ul .selected{
+    opacity: 1;
+}
+.navigation ul li, .navigation img{
+    cursor: pointer;
+}
+.navigation ul li{
+    opacity: 0.5;
+    padding-right: 30px;
+    transition: opacity 0.5s;
+}
+.navigation ul li:hover{
+    opacity: 1;
+}

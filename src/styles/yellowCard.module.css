@@ -1,0 +1,27 @@
+.box{
+    border: 2px solid #ff7000;
+    padding: 10px 20px;
+    width: fit-content;
+}
+.box .heading h1{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+.box .description p{
+    width: 45ch;
+    opacity: 0.65;
+}
+.box .readMore{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.box .readMore svg{
+    width:7%;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+.box .readMore:hover svg{
+    transform: translateX(15px);
+}
