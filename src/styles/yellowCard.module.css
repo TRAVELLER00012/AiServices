@@ -1,15 +1,16 @@
 .box{
     border: 2px solid #ff7000;
     padding: 10px 20px;
-    width: fit-content;
 }
 .box .heading h1{
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 5px;
 }
 .box .description p{
-    width: 45ch;
     opacity: 0.65;
+}
+.fixedWidth{
+    width: 45ch;
 }
 .box .readMore{
     display: flex;

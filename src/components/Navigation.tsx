@@ -6,17 +6,17 @@ import { Link } from 'react-router-dom'
 
 interface NavigationStatus {
     about?: boolean,
-    knowledge?:boolean,
+    application?:boolean,
     service?: boolean,
     pricing?: boolean,
     contactus?: boolean
     
 }
 
-const Navigation = ({about,contactus,knowledge,pricing,service}:NavigationStatus) => {
+const Navigation = ({about,contactus,application,pricing,service}:NavigationStatus) => {
     const [selectedItem,setSelectedItem] = useState({
         about,
-        knowledge,
+        application,
         service,
         pricing,
         contactus
@@ -29,27 +29,27 @@ const Navigation = ({about,contactus,knowledge,pricing,service}:NavigationStatus
                     <Link to={"/"}  onClick={() => setSelectedItem({
                         about:true,
                         contactus : false,
-                        knowledge : false,
+                        application : false,
                         pricing : false,
                         service : false
                     })}>About</Link>
                 </li>
 
-                <li className={selectedItem.knowledge ? styles.selected : ""}>
-                    <Link to={"/knowledge"}  onClick={() => setSelectedItem({
+                <li className={selectedItem.application ? styles.selected : ""}>
+                    <Link to={"/application"}  onClick={() => setSelectedItem({
                         about:false,
                         contactus : false,
-                        knowledge : true,
+                        application : true,
                         pricing : false,
                         service : false
-                    })}>Knowledge</Link>
+                    })}>Application</Link>
                 </li>
 
 
                 <li className={selectedItem.service ? styles.selected : ""} onClick={() => setSelectedItem({
                     about:false,
                     contactus : false,
-                    knowledge : false,
+                    application : false,
                     pricing : false,
                     service : true
                 })}>Service</li>
@@ -57,7 +57,7 @@ const Navigation = ({about,contactus,knowledge,pricing,service}:NavigationStatus
                 <li className={selectedItem.pricing ? styles.selected : ""} onClick={() => setSelectedItem({
                     about:false,
                     contactus : false,
-                    knowledge : false,
+                    application : false,
                     pricing : true,
                     service : false
                 })}>Pricing</li>
@@ -65,7 +65,7 @@ const Navigation = ({about,contactus,knowledge,pricing,service}:NavigationStatus
                 <li className={selectedItem.contactus ? styles.selected : ""} onClick={() => setSelectedItem({
                     about:false,
                     contactus : true,
-                    knowledge : false,
+                    application : false,
                     pricing : false,
                     service : false
                 })}>Contact Us</li>

@@ -3,11 +3,7 @@
     align-items: center;
     flex-direction: column;
 }
-.heading .headingh1{
-    font-size: 6rem;
-    text-shadow: 5px 1px 2px #fd6f00;
-    margin-bottom: 10px;
-}
+
 .heading h2{
     margin-top: 30px;
     width: 45ch;

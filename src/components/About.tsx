@@ -8,7 +8,7 @@ const About = () => {
             <h1>Artificial Intelligence</h1>
         </div>
         <div className={styles.heading}>
-            <h1 className={styles.headingh1}>
+            <h1 className="big-heading">
                 The Future
             </h1>
             <h2>

@@ -16,7 +16,7 @@ const Knowledge = () => {
         const elements : JSX.Element[] = []
         for (let index = i.start; index < i.end ; index++ ){
             elements.push(
-                <YellowCard heading={data[index].heading} key={index}>{data[index].description}</YellowCard>
+                <YellowCard fixedWidth={true} heading={data[index].heading} key={index}>{data[index].description}</YellowCard>
             )
         }
         return elements;
