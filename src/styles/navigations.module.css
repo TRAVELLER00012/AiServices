@@ -11,6 +11,10 @@
 .navigation ul .selected{
     opacity: 1;
 }
+.navigation ul a:any-link{
+    color: white;
+    text-decoration: none;
+}
 .navigation ul li, .navigation img{
     cursor: pointer;
 }
