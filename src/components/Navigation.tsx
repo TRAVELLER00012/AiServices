@@ -13,7 +13,7 @@ interface NavigationStatus {
     
 }
 
-const Navigation = ({about,contactus,application,pricing,service}:NavigationStatus) => {
+const Navigation = ({about,contactus,application,service}:NavigationStatus) => {
     const [selectedItem,setSelectedItem] = useState({
         about,
         application,
