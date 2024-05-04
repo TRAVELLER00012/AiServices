@@ -52,12 +52,15 @@ const Navigation = ({about,contactus,application,service}:NavigationStatus) => {
                 </li>
 
 
-                <li className={selectedItem.contactus ? styles.selected : ""} onClick={() => setSelectedItem({
-                    about:false,
-                    contactus : true,
-                    application : false,
-                    service : false
-                })}>Contact Us</li>
+                <li className={selectedItem.contactus ? styles.selected : ""}>
+                    <Link to={"/contact"}  onClick={() => setSelectedItem({
+                        about:false,
+                        contactus : true,
+                        application : false,
+                        service : false
+                    })}>Contact Us
+                    </Link>
+                </li>
             </ul>
             <YellowButton>Sign in</YellowButton>
         </div>

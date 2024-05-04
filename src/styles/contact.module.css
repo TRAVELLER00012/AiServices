@@ -1,0 +1,31 @@
+.contactUsForm{
+    display: grid;
+    padding: 40px 100px;
+    grid-template-rows: repeat(auto,1fr);
+    row-gap: 20px;
+}
+.contactUsForm input, .contactUsForm textarea{
+    padding:15px 20px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+}
+.contactUsForm textarea{
+    height: 150px;
+}
+.contactUsForm button{
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 1.25rem;
+}
+.contactUsForm button:first-child{
+    background-color: #fd6f00;
+}
+.contactUsForm button:last-child{
+    background-color: grey;
+}
