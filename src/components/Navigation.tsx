@@ -18,7 +18,6 @@ const Navigation = ({about,contactus,application,pricing,service}:NavigationStat
         about,
         application,
         service,
-        pricing,
         contactus
     })
     return (
@@ -30,7 +29,6 @@ const Navigation = ({about,contactus,application,pricing,service}:NavigationStat
                         about:true,
                         contactus : false,
                         application : false,
-                        pricing : false,
                         service : false
                     })}>About</Link>
                 </li>
@@ -40,33 +38,24 @@ const Navigation = ({about,contactus,application,pricing,service}:NavigationStat
                         about:false,
                         contactus : false,
                         application : true,
-                        pricing : false,
                         service : false
                     })}>Application</Link>
                 </li>
 
+                <li className={selectedItem.service ? styles.selected : ""}>
+                    <Link to={"/service"} onClick={() => setSelectedItem({
+                        about:false,
+                        contactus : false,
+                        application : false,
+                        service : true
+                    })}>Service</Link>
+                </li>
 
-                <li className={selectedItem.service ? styles.selected : ""} onClick={() => setSelectedItem({
-                    about:false,
-                    contactus : false,
-                    application : false,
-                    pricing : false,
-                    service : true
-                })}>Service</li>
-
-                <li className={selectedItem.pricing ? styles.selected : ""} onClick={() => setSelectedItem({
-                    about:false,
-                    contactus : false,
-                    application : false,
-                    pricing : true,
-                    service : false
-                })}>Pricing</li>
 
                 <li className={selectedItem.contactus ? styles.selected : ""} onClick={() => setSelectedItem({
                     about:false,
                     contactus : true,
                     application : false,
-                    pricing : false,
                     service : false
                 })}>Contact Us</li>
             </ul>

@@ -1,0 +1,27 @@
+.subHeading{
+    font-weight: normal;
+    text-align: center;
+    opacity: 0.75;
+    width: 100ch;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.manual{
+    border-radius: 10px;
+    border: 2px solid #fd6f00;
+    padding: 10px 20px;
+    margin-top: 100px;
+}
+.manual h1{
+    margin-top: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+}
+.manual p{
+    text-align: center;
+    opacity: 0.75;
+    font-size: 1rem;
+}
