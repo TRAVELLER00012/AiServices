@@ -6,7 +6,7 @@ import ContactUsPage from "../components/page/ContactUsPage";
 import LoginPage from "../components/page/LoginPage";
 import RegisterPage from "../components/page/RegisterPage";
 import MainPage from "../MainPage/MainPage";
-import Settings from "../Settinngs/Settings";
+
 
 const router = createBrowserRouter([
     {path:"/",element:<App />},
@@ -16,8 +16,7 @@ const router = createBrowserRouter([
     {path:"/login",element:<LoginPage />},
     {path:"/register",element:<RegisterPage />},
     {path:"/mainpage",children:[
-        {path:"",element:<MainPage />},
-        {path:"settings",element:<Settings />},
+        {path:"",element:<MainPage />}
     ]},
 ])
 export default router;
