@@ -1,7 +1,9 @@
 :root{
     --yelow-color:#fd6f00;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #2b0b04;
     color: white;

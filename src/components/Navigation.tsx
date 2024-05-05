@@ -1,7 +1,6 @@
 import styles from '../styles/navigations.module.css'
 import Logo from "../assets/images/ai.png"
 import { useState } from 'react'
-import YellowButton from './YellowButton'
 import { Link } from 'react-router-dom'
 import RegisterButton from './RegisterButton'
 
@@ -9,9 +8,7 @@ interface NavigationStatus {
     about?: boolean,
     application?:boolean,
     service?: boolean,
-    pricing?: boolean,
     contactus?: boolean
-    
 }
 
 const Navigation = ({about,contactus,application,service}:NavigationStatus) => {

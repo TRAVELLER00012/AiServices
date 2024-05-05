@@ -1,0 +1,19 @@
+.sideBar{
+    border-right: 2px solid rgba(255,255,255,0.75);
+}
+.sideBar ul{
+    list-style: none;
+}
+.sideBar li a:any-link{
+    color: white;
+    text-decoration: none;
+}
+.sideBar li{
+    font-size: 1.125rem;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+    margin-bottom: 20px;
+}
+.sideBar li:hover{
+    opacity: 1;
+}

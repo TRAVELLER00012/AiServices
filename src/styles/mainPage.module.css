@@ -1,0 +1,21 @@
+.main{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+.mainPage h1{
+    margin-top: 0;
+}
+.model h2{
+    font-size: 4rem;
+    text-align: left;
+    padding: 20px 50px;
+}
+.modelGrid{
+    display: grid;
+    padding: 20px 50px;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+.modelGrid div{
+    border-radius: 10px;
+}
