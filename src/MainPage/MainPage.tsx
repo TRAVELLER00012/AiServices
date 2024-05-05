@@ -10,6 +10,7 @@ const MainPage = () => {
         <>
             <ParticleBackground />
             <MainPageNavBar services={true} />
+            <div className={styles.apiKey}><span>API KEY</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sed.</span></div>
             <div className={styles.main}>
                 <SideBar items={[{itemLink:"#regression",itemName:"Regression"},{itemName:"Classification",itemLink:"#classification"}]}/>
                 <div className={styles.mainPage}>
