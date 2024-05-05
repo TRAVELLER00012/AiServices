@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "../styles/about.module.css"
 import YellowBox from "./YellowBox"
 import YellowButton from "./YellowButton"
@@ -14,7 +15,7 @@ const About = () => {
             <h2>
             Transforming Tomorrow with Intelligent Innovation and Automation.
             </h2>
-            <YellowButton>Explore More</YellowButton>
+            <YellowButton><Link to={"/service"} className={styles.explore}>Explore More</Link></YellowButton>
             <div className={styles.boxGrid}>
                 <YellowBox heading="Machine Learning">Machine Learning is a subset of Artificial Intelligence, empowering computers to learn and improve performance without explicit programming, relying on data-driven algorithms for predictions and decision-making.</YellowBox>
                 <YellowBox heading="Artificial Intelligence">Artificial Intelligence encompasses the creation of intelligent machines, mirroring human cognitive functions. It includes Machine Learning and broader applications such as natural language processing and problem-solving</YellowBox>
