@@ -1,0 +1,67 @@
+.box{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.loginBox{
+    box-shadow: 0 0 20px white;
+    background-color: white;
+    color: black;
+    width: 33%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+.loginBox:hover{
+    box-shadow: 0 0 40px white;
+}
+.loginBox form{
+    display: grid;
+    grid-template-rows: repeat(auto,1fr);
+    row-gap: 20px;
+}
+.loginBox h1{
+    text-align: center;
+}
+.loginBox form p{
+    margin: 0;
+    font-weight: 500;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.loginBox form p:hover{
+    opacity: 1;
+}
+.loginBox form input,.loginBox form button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    outline: 0;
+}
+.loginBox form div label{
+    font-weight: 500;
+}
+.loginBox form input{
+    border: 0;
+}
+.loginBox form .input{
+    border-bottom: 2px solid black;
+}
+.buttons{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 10px;
+}
+.buttons button{
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+.buttons button[type="submit"]{
+    background-color: #fd6f00;
+}
+.buttons button[type="reset"]{
+    background-color: lightgrey;
+}

@@ -119,10 +119,10 @@ const ParticleBackground = () => {
     );
   return (
     <Particles
-    id="tsparticles"
-    particlesLoaded={particlesLoaded}
-    options={options}
-    className="bg-particles" // Apply the background class here
+      id="tsparticles"
+      particlesLoaded={particlesLoaded}
+      options={options}
+      className="bg-particles" // Apply the background class here
     />
   )
 }

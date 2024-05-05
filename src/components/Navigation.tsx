@@ -3,6 +3,7 @@ import Logo from "../assets/images/ai.png"
 import { useState } from 'react'
 import YellowButton from './YellowButton'
 import { Link } from 'react-router-dom'
+import RegisterButton from './RegisterButton'
 
 interface NavigationStatus {
     about?: boolean,
@@ -62,7 +63,7 @@ const Navigation = ({about,contactus,application,service}:NavigationStatus) => {
                     </Link>
                 </li>
             </ul>
-            <YellowButton>Sign in</YellowButton>
+            <RegisterButton />
         </div>
     )
 }
