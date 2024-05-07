@@ -5,7 +5,7 @@ import YellowCard from '../components/YellowCard'
 import styles from "../styles/mainPage.module.css"
 
 const MainPage = () => {
-
+    
     return (
         <>
             <ParticleBackground />
