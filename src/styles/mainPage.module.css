@@ -25,7 +25,9 @@
     margin-top: 5px;
 }
 .apiKey{
+    overflow-x: scroll;
     display: flex;
+    align-items: center;
     font-size: 1.125rem;
     justify-content: space-between;
     background-color: white;
@@ -34,6 +36,8 @@
     border-radius: 10px;
     margin-bottom: 50px;
 }
+
 .apiKey span:first-child{
     font-weight: bold;
+    margin-right: 10px;
 }
