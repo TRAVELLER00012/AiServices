@@ -40,7 +40,7 @@ const LoginPage = () => {
                     }}>
                         
                         <div>
-                            <label htmlFor="username">Email {error  && <span className="error">Invalid Email</span>}</label>
+                            <label htmlFor="username">UserName {error  && <span className="error">Invalid Email</span>}</label>
                             <div className={styles.input}>
                                 <img src={User} alt="User Icon"/>
                                 <input type="text" id="username" placeholder="User Name" ref={usernameRef} />
