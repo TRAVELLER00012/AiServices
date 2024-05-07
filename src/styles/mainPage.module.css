@@ -13,8 +13,8 @@
 .modelGrid{
     display: grid;
     padding: 20px 50px;
-    grid-template-columns: repeat(3,25%);
-    column-gap: 20px;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 20px;
 }
 .modelGrid div{
     border-radius: 10px;

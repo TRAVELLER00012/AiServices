@@ -43,9 +43,24 @@ const MainPage = () => {
                     <div id='classification' className={styles.model}>
                         <h2 className='big-heading'>Classification Models</h2>
                         <div className={styles.modelGrid}>
-                            <YellowCard heading={"Linear Regression"}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora. Unde maiores repellat ducimus corrupti sint, quas sunt ad. Optio nemo quas libero provident iusto.</p></YellowCard>
-                            <YellowCard heading={"Linear Regression"}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora. Unde maiores repellat ducimus corrupti sint, quas sunt ad. Optio nemo quas libero provident iusto.</p></YellowCard>
-                            <YellowCard heading={"Linear Regression"}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora. Unde maiores repellat ducimus corrupti sint, quas sunt ad. Optio nemo quas libero provident iusto.</p></YellowCard>
+                            <YellowCard heading={"Logistic Classifier"}>
+                                <p>http://127.0.0.1:8000/model/logisiticclassifier/</p>
+                                <p>http://127.0.0.1:8000/model/logisiticclassifier/predict</p>
+                                <p>FileX and FileY : Training</p>
+                                <p>FileX : Prediction</p>
+                            </YellowCard>
+                            <YellowCard heading={"KNN Classifier"}>
+                                <p>http://127.0.0.1:8000/model/knnclassifier/</p>
+                                <p>http://127.0.0.1:8000/model/knnclassifier/predict</p>
+                                <p>FileX and FileY : Training</p>
+                                <p>FileX : Prediction</p>
+                            </YellowCard>
+                            <YellowCard heading={"SVC Classifier"}>
+                                <p>http://127.0.0.1:8000/model/svcclassifier/</p>
+                                <p>http://127.0.0.1:8000/model/svcclassifier/predict</p>
+                                <p>FileX and FileY : Training</p>
+                                <p>FileX : Prediction</p>
+                            </YellowCard>
                         </div>
                     </div>
 
