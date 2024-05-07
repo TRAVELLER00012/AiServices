@@ -13,11 +13,16 @@
 .modelGrid{
     display: grid;
     padding: 20px 50px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,25%);
     column-gap: 20px;
 }
 .modelGrid div{
     border-radius: 10px;
+    word-wrap: break-word;
+}
+.modelGrid p{
+    margin-bottom: 3px;
+    margin-top: 5px;
 }
 .apiKey{
     display: flex;

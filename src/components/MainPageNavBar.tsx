@@ -29,13 +29,13 @@ const MainPageNavBar = ({services,exampleCode,contactus} : NavigationStatus) => 
                     })}>Services</Link>
                 </li>
 
-                <li className={selectedItem.exampleCode ? styles.selected : ""}>
+                {/* <li className={selectedItem.exampleCode ? styles.selected : ""}>
                     <Link to={"/mainpage#exampleCode"}  onClick={() => setSelectedItem({
                         services:false,
                         contactus : false,
                         exampleCode : true,
                     })}>Example</Link>
-                </li>
+                </li> */}
 
                 {/* <li className={selectedItem.contactus ? styles.selected : ""}>
                     <Link to={"/contact"}  onClick={() => setSelectedItem({

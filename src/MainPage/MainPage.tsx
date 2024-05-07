@@ -19,9 +19,24 @@ const MainPage = () => {
                     <div id='regression' className={styles.model}>
                         <h2 className='big-heading'>Regression Models</h2>
                         <div className={styles.modelGrid}>
-                            <YellowCard heading={"Linear Regression"}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora. Unde maiores repellat ducimus corrupti sint, quas sunt ad. Optio nemo quas libero provident iusto.</p></YellowCard>
-                            <YellowCard heading={"Linear Regression"}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora. Unde maiores repellat ducimus corrupti sint, quas sunt ad. Optio nemo quas libero provident iusto.</p></YellowCard>
-                            <YellowCard heading={"Linear Regression"}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora. Unde maiores repellat ducimus corrupti sint, quas sunt ad. Optio nemo quas libero provident iusto.</p></YellowCard>
+                            <YellowCard heading={"Linear Regression"}>
+                                <p>http://127.0.0.1:8000/model/linearregression/</p>
+                                <p>http://127.0.0.1:8000/model/linearregression/predict/</p>
+                                <p>FileX and FileY : Training</p>
+                                <p>FileX : Prediction</p>
+                            </YellowCard>
+                            <YellowCard heading={"Polynomial Regression"}>
+                                <p>http://127.0.0.1:8000/model/polynomialregression/</p>
+                                <p>http://127.0.0.1:8000/model/polynomialregression/predict</p>
+                                <p>FileX and FileY : Training</p>
+                                <p>FileX : Prediction</p>
+                            </YellowCard>
+                            <YellowCard heading={"Decission Tree Regression"}>
+                                <p>http://127.0.0.1:8000/model/decissionregression/</p>
+                                <p>http://127.0.0.1:8000/model/decissionregression/predict</p>
+                                <p>FileX and FileY : Training</p>
+                                <p>FileX : Prediction</p>
+                            </YellowCard>
                         </div>
                     </div>
 
