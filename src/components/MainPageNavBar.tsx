@@ -37,14 +37,14 @@ const MainPageNavBar = ({services,exampleCode,contactus} : NavigationStatus) => 
                     })}>Example</Link>
                 </li>
 
-                <li className={selectedItem.contactus ? styles.selected : ""}>
+                {/* <li className={selectedItem.contactus ? styles.selected : ""}>
                     <Link to={"/contact"}  onClick={() => setSelectedItem({
                         services:false,
                         contactus : true,
                         exampleCode : false,
                     })}>Contact Us
                     </Link>
-                </li>
+                </li> */}
             </ul>
             <RegisterButton />
         </div>

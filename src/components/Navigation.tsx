@@ -50,7 +50,7 @@ const Navigation = ({about,contactus,application,service}:NavigationStatus) => {
                 </li>
 
 
-                <li className={selectedItem.contactus ? styles.selected : ""}>
+                {/* <li className={selectedItem.contactus ? styles.selected : ""}>
                     <Link to={"/contact"}  onClick={() => setSelectedItem({
                         about:false,
                         contactus : true,
@@ -58,7 +58,7 @@ const Navigation = ({about,contactus,application,service}:NavigationStatus) => {
                         service : false
                     })}>Contact Us
                     </Link>
-                </li>
+                </li> */}
             </ul>
             <RegisterButton />
         </div>
