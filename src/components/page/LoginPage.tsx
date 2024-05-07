@@ -1,5 +1,5 @@
 import styles from "../../styles/loginPage.module.css"
-import Email  from "../../assets/images/email.png"
+import User  from "../../assets/images/name.png"
 import Password  from "../../assets/images/lock.png"
 import { useNavigate, Link } from "react-router-dom"
 import ParticleBackground from "../ParticleBackground"
@@ -19,10 +19,10 @@ const LoginPage = () => {
                     }}>
                         
                         <div>
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor="username">Email</label>
                             <div className={styles.input}>
-                                <img src={Email} alt="Email Icon"/>
-                                <input type="email" id="email" placeholder="Email" />
+                                <img src={User} alt="User Icon"/>
+                                <input type="text" id="username" placeholder="User Name" />
                             </div>
                         </div>
                         <div>
