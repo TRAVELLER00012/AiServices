@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <ParticleBackground />
-      {/* <Navigation about={true}/> */}
+      <Navigation about={true}/>
       <About />
       <Knowledge />
 
