@@ -32,3 +32,21 @@
     color: white;
     text-decoration: none;
 }
+@media screen and (max-width:768px) {
+    .side{
+        display: none;
+    }
+    .boxGrid{
+        grid-template-columns: auto;
+        grid-template-rows: 50% auto;
+    }
+}
+@media screen and (max-width:426px) {
+    .heading h2{
+        width: 35ch;
+        font-size: 1.45rem;
+    }
+    .boxGrid{
+        
+    }
+}

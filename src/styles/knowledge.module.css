@@ -27,3 +27,10 @@
 .disabled{
     opacity: 0.5;
 }
+@media screen and (max-width:1024px) {
+    .readBox{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 20px;
+    }
+}

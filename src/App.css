@@ -36,3 +36,9 @@ body{
 .error{
     color: tomato;
 }
+@media screen and (max-width:426px) {
+    .big-heading{
+        white-space: nowrap;
+        font-size: 4rem;
+    }
+}
