@@ -37,13 +37,13 @@ const MainPage = () => {
                             </YellowCard>
                             <YellowCard heading={"Polynomial Regression"}>
                                 <p>http://127.0.0.1:8000/model/polynomialregression/</p>
-                                <p>http://127.0.0.1:8000/model/polynomialregression/predict</p>
+                                <p>http://127.0.0.1:8000/model/polynomialregression/predict/</p>
                                 <p>FileX and FileY : Training</p>
                                 <p>FileX : Prediction</p>
                             </YellowCard>
                             <YellowCard heading={"Decission Tree Regression"}>
                                 <p>http://127.0.0.1:8000/model/decissionregression/</p>
-                                <p>http://127.0.0.1:8000/model/decissionregression/predict</p>
+                                <p>http://127.0.0.1:8000/model/decissionregression/predict/</p>
                                 <p>FileX and FileY : Training</p>
                                 <p>FileX : Prediction</p>
                             </YellowCard>
@@ -55,13 +55,13 @@ const MainPage = () => {
                         <div className={styles.modelGrid}>
                             <YellowCard heading={"Logistic Classifier"}>
                                 <p>http://127.0.0.1:8000/model/logisiticclassifier/</p>
-                                <p>http://127.0.0.1:8000/model/logisiticclassifier/predict</p>
+                                <p>http://127.0.0.1:8000/model/logisiticclassifier/predict/</p>
                                 <p>FileX and FileY : Training</p>
                                 <p>FileX : Prediction</p>
                             </YellowCard>
                             <YellowCard heading={"KNN Classifier"}>
                                 <p>http://127.0.0.1:8000/model/knnclassifier/</p>
-                                <p>http://127.0.0.1:8000/model/knnclassifier/predict</p>
+                                <p>http://127.0.0.1:8000/model/knnclassifier/predict/</p>
                                 <p>FileX and FileY : Training</p>
                                 <p>FileX : Prediction</p>
                             </YellowCard>

@@ -4,6 +4,7 @@ import {
   type ISourceOptions,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
+import React from "react";
 
 
 const ParticleBackground = () => {
