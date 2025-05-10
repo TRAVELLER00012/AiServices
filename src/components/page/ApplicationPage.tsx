@@ -1,7 +1,6 @@
 import Navigation from "../Navigation"
 import ParticleBackground from "../ParticleBackground"
 import styles from "../../styles/applicationPage.module.css"
-import YellowBox from "../YellowBox"
 import YellowCard from "../YellowCard"
 
 const ApplicationPage = () => {
