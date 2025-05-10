@@ -1,14 +1,14 @@
 import styles from "../../styles/loginPage.module.css"
-import User  from "../../assets/images/name.png"
+import EmailIcon  from "../../assets/images/name.png"
 import Password  from "../../assets/images/lock.png"
 import { useNavigate, Link } from "react-router-dom"
 import ParticleBackground from "../ParticleBackground"
 import { useRef, useState } from "react"
-import loginService, { Tokens } from "../../services/login-service"
+import loginService from "../../services/login-service"
 
 const LoginPage = () => {
     const navigate = useNavigate()
-    const usernameRef = useRef<HTMLInputElement>(null)
+    const emailRef = useRef<HTMLInputElement>(null)
     const passwordRef = useRef<HTMLInputElement>(null)
 
     const [error,setError] = useState(false)
@@ -22,28 +22,27 @@ const LoginPage = () => {
                     <h1>Login</h1>
                     <form onSubmit={(event) =>{
                         event.preventDefault()
-                        if (usernameRef.current && passwordRef.current){
-                            let tokens : Tokens = {access:"",refresh:""};
-                            const request = loginService.login({password:passwordRef.current.value,username:usernameRef.current.value})
+                        if (emailRef.current && passwordRef.current){
+                            let token = "";
+                            const request = loginService.login({password:passwordRef.current.value,email:emailRef.current.value})
                             request
                             .then((res) =>{
-                                tokens = res.data
+                                token = res.headers["authorization"]
                                 navigate("/mainpage")
                             })
                             .catch(() => setError(true))
                             .finally(() =>{
-                                localStorage.setItem("access",tokens.access)
-                                localStorage.setItem("refresh",tokens.refresh)
+                                localStorage.setItem("jwt",token)
                             })
                         }
 
                     }}>
                         
                         <div>
-                            <label htmlFor="username">UserName {error  && <span className="error">Invalid Email</span>}</label>
+                            <label htmlFor="email">Email {error  && <span className="error">Invalid Email</span>}</label>
                             <div className={styles.input}>
-                                <img src={User} alt="User Icon"/>
-                                <input type="text" id="username" placeholder="User Name" ref={usernameRef} />
+                                <img src={EmailIcon} alt="Email Icon"/>
+                                <input type="text" id="email" placeholder="Email" ref={emailRef} />
                             </div>
                         </div>
                         <div>

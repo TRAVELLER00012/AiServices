@@ -1,3 +1,4 @@
+import { jwtDecode } from 'jwt-decode'
 import { Link, useNavigate } from 'react-router-dom'
 import YellowButton from './YellowButton'
 import styles from "../styles/registerButton.module.css"
@@ -7,13 +8,26 @@ const RegisterButton = () => {
   const [logged,setLogged] = useState(false)
   const navigate = useNavigate()
   useEffect(() =>{
-    const access = localStorage.getItem("access")
-    const refresh = localStorage.getItem("refresh")
-    if (access && refresh)setLogged(true)
+    let token = localStorage.getItem("jwt")
+    token = token?.startsWith("Bearer ") ? token.slice(7) : token
+
+    try{
+      const decoded = jwtDecode<{exp:number}>(token!)
+      const isExpired = decoded.exp < Date.now() / 1000;
+      if (!isExpired) {
+        setLogged(true);
+      } else {
+        localStorage.removeItem("jwt");
+        setLogged(false);
+      }
+      setLogged(true)
+    }catch(err){
+      localStorage.removeItem("jwt")
+      setLogged(false)
+    }
   },[])
   const removeToken = () =>{
-    localStorage.removeItem("access")
-    localStorage.removeItem("refresh")
+    localStorage.removeItem("jwt")
   }
   return (
     <YellowButton>

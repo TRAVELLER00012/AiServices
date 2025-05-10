@@ -24,12 +24,12 @@ const RegisterPage = () => {
                     <form onSubmit={(event) =>{
                         event.preventDefault()
                         if (usernameRef.current && emailRef.current && passwordRef.current){
-                            const request = registerService.register({email:emailRef.current.value,password:passwordRef.current.value,username:usernameRef.current.value})
+                            const request = registerService.register({email:emailRef.current.value,password:passwordRef.current.value,full_name:usernameRef.current.value})
                             request.then(() =>{
-                                loginService.login({password:passwordRef.current!.value,username:usernameRef.current!.value})
+                                loginService.login({password:passwordRef.current!.value,email:emailRef.current!.value})
                                     .then((res) =>{
-                                        localStorage.setItem("access",res.data.access)
-                                        localStorage.setItem("refresh",res.data.refresh)
+                                        localStorage.setItem("jwt",res.headers["authorization"])
+                                        console.log(res.headers["authorization"])
                                         navigate("/mainpage")
                                     }).catch(() => setError(true))
                             }).catch(() => setError(true)) 

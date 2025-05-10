@@ -4,23 +4,21 @@ import ParticleBackground from '../components/ParticleBackground'
 import SideBar from '../components/SideBar'
 import YellowCard from '../components/YellowCard'
 import styles from "../styles/mainPage.module.css"
-import { Tokens } from '../services/login-service'
 import { useNavigate } from 'react-router-dom'
 
 const MainPage = () => {
-    const [token,setToken] = useState<Tokens>({access:"",refresh:""})
+    const [token,setToken] = useState<String>("")
     const navigate = useNavigate()
     useEffect(() =>{
-        const access = localStorage.getItem("access")
-        const refresh = localStorage.getItem("refresh")
-        if (!(access && refresh)) navigate("/login")
-        else setToken({access,refresh})
+        const t = localStorage.getItem("jwt")
+        if (!t) navigate("/login")
+        else setToken(t)
     },[])
     return (
         <>
             <ParticleBackground />
             <MainPageNavBar services={true} />
-            <div className={styles.apiKey}><span>JWT</span><span>{token.access}</span></div>
+            <div className={styles.apiKey}><span>JWT</span><span>{token}</span></div>
             <div className={styles.main}>
                 <SideBar items={[{itemLink:"#regression",itemName:"Regression"},{itemName:"Classification",itemLink:"#classification"}]}/>
                 <div className={styles.mainPage}>
